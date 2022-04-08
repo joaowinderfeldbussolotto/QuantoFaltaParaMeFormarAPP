@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="0dp"
+    tools:context=".ui.fragment.ProgressBarFragment">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+
+    <TextView
+        android:id="@+id/textViewProgressACC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00%"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarACC"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarACC"
+        app:layout_constraintStart_toStartOf="@+id/progressBarACC"
+        app:layout_constraintTop_toTopOf="@+id/progressBarACC" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBarACC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:progress="75"
+        app:indicatorColor="#1F50FF"
+        app:indicatorSize="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:trackColor="#D3D3D3"
+        app:trackThickness="10dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="CCR cursadas:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="ACC completas:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarCCR" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBarCCR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="75"
+        app:indicatorColor="#1F50FF"
+        app:indicatorSize="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:trackColor="#D3D3D3"
+        app:trackThickness="10dp" />
+
+    <TextView
+        android:id="@+id/textViewProgressCCR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00%"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarCCR"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarCCR"
+        app:layout_constraintStart_toStartOf="@+id/progressBarCCR"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
